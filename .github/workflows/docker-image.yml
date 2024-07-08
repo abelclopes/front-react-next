@@ -27,7 +27,6 @@ jobs:
         uses: docker/build-push-action@v6.3.0
         with:
           context: ./front-app
+          file: Dockerfile
           push: true
           tags: abellopes/front-react-next:latest
-          # Se desejar adicionar uma tag de versão, descomente a linha abaixo e ajuste conforme necessário
-          # tags: abelclopes/front-react-next:latest, abelclopes/front-react-next:${{ github.sha }}
