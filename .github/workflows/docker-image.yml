@@ -29,6 +29,6 @@ jobs:
       with:
         context: ./front-app
         push: true
-        tags: abelclopes/front-react-next:latest
+        tags: abellopes/front-react-next:latest
         # Se desejar adicionar uma tag de versão, descomente a linha abaixo e ajuste conforme necessário
         # tags: abelclopes/front-react-next:latest, abelclopes/front-react-next:${{ github.sha }}
