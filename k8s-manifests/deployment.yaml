@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: front-react-next
-        image: your-dockerhub-username/front-react-next:latest
+        image: abellopes/front-react-next:latest
         ports:
         - containerPort: 80
