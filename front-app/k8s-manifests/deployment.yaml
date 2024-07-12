@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-react-next
+  labels:
+    app: front-react-next
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: front-react-next
+  template:
+    metadata:
+      labels:
+        app: front-react-next
+    spec:
+      containers:
+      - name: front-react-next
+        image: your-dockerhub-username/front-react-next:latest
+        ports:
+        - containerPort: 80
