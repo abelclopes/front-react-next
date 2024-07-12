@@ -2,16 +2,16 @@
 FROM node:18-alpine
 
 # Definindo o diretório de trabalho
-WORKDIR /app
+WORKDIR /home/front-app/app
 
 # Copiando o package.json e o package-lock.json
-COPY package*.json ./
+COPY ./front-app/package*.json ./
 
 # Instalando as dependências
 RUN npm install
 
 # Copiando o restante dos arquivos do projeto
-COPY . .
+COPY ./front-app .
 
 # Construindo o projeto Next.js
 RUN npm run build
