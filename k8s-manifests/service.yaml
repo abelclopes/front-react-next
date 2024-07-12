@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: front-react-next
+  namespace: front-app
   labels:
     app: front-react-next
 spec:
