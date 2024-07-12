@@ -1,0 +1,5 @@
+.eslintrc.json
+.gitignore
+README.md
+.*
+*.md
