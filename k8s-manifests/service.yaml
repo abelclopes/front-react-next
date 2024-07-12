@@ -5,10 +5,9 @@ metadata:
   labels:
     app: front-react-next
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
   - port: 3000
     targetPort: 3000
-    nodePort: 30001  # Porta válida no intervalo 30000-32767
   selector:
     app: front-react-next
