@@ -26,6 +26,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6.3.0
         with:
-          context: ./front-app/
+          context: .
           push: true
           tags: abellopes/front-react-next:latest
